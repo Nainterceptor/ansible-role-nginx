@@ -1,2 +1,7 @@
 ---
 # defaults file for Nainterceptor.nginx
+nginx_hosts:
+    - key: default
+      root: "/var/www/static"
+      index: "index.html index.htm"
+#      server_name: "foo.bar"

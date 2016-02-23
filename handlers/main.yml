@@ -1,2 +1,17 @@
 ---
 # handlers file for Nainterceptor.nginx
+- name: "Restart nginx"
+  service:
+    name: nginx
+    state: restarted
+
+- name: "Start nginx"
+  service:
+    name: nginx
+    state: started
+
+- name: "Enable nginx"
+  service:
+    name: nginx
+    state: started
+    enabled: yes
